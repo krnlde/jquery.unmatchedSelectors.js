@@ -10,7 +10,7 @@
 
 	var UnmatchedSelector = function (selector, context) {
 		this.stack = (new Error()).stack.split('\n');
-		this.message = '$("' + selector + '"); didn\'t match any content' + (context ? ' in context ' + context : '') + ' in ' + $.trim(this.stack[this.stack.length - 1]);
+		this.message = '$("' + selector + '"); didn\'t match any content' + (context ? ' in context ' + context : '') + ' - ' + $.trim(this.stack[this.stack.length - 1]);
 		this.selector = selector;
 		this.context = context;
 	};
