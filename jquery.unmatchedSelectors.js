@@ -3,7 +3,6 @@
  *
  * @version 1.0.1
  * @author Kai Dorschner <the-kernel32@web.de>
- * @todo Use an option to enable different logger callbacks like jquery ui badges or something.
  */
 (function ($) {
 	"use strict";
